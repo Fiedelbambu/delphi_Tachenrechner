@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2025.02.10 09:35:30.456,=C:\dev_Delphi\Unit10.pas</Transaction>
+    <Transaction>2025.02.10 09:41:43.876,C:\dev_Delphi\Taschenrechner.dproj=C:\dev_Delphi\Project9.dproj</Transaction>
+    <Transaction>2025.02.10 09:42:42.137,C:\delphi_Rechner\Unit10.pas=C:\dev_Delphi\Unit10.pas</Transaction>
+    <Transaction>2025.02.10 09:42:42.137,C:\delphi_Rechner\Unit10.dfm=C:\dev_Delphi\Unit10.dfm</Transaction>
+    <Transaction>2025.02.10 09:42:46.347,C:\delphi_Rechner\Taschenrechner.dproj=C:\dev_Delphi\Taschenrechner.dproj</Transaction>
+    <Transaction>2025.02.10 09:43:47.982,=C:\delphi_Rechner\gitignore.txt</Transaction>
+  </Transactions>
+</BorlandProject>
