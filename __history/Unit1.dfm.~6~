@@ -1,0 +1,203 @@
+object Form10: TForm10
+  Left = 0
+  Top = 0
+  Caption = 'Rechner'
+  ClientHeight = 414
+  ClientWidth = 348
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnClick = btnZifferClick
+  TextHeight = 15
+  object Edit1: TEdit
+    Left = 8
+    Top = 64
+    Width = 318
+    Height = 23
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object btn_Modulo: TButton
+    Left = 8
+    Top = 104
+    Width = 75
+    Height = 25
+    Caption = '%'
+    TabOrder = 1
+    OnClick = btn_percentClick
+  end
+  object btn_loeschen: TButton
+    Left = 89
+    Top = 104
+    Width = 75
+    Height = 25
+    Caption = 'CE'
+    TabOrder = 2
+    OnClick = btn_zurueckClick
+  end
+  object btn_zurueck: TButton
+    Left = 170
+    Top = 104
+    Width = 75
+    Height = 25
+    Caption = 'C'
+    TabOrder = 3
+    OnClick = btn_loeschenClick
+  end
+  object btn_dividieren: TButton
+    Left = 251
+    Top = 104
+    Width = 75
+    Height = 25
+    Caption = '/'
+    TabOrder = 4
+    OnClick = btn_dividierenClick
+  end
+  object btn_sieben: TButton
+    Left = 8
+    Top = 135
+    Width = 75
+    Height = 25
+    Caption = '7'
+    TabOrder = 5
+    OnClick = btnZifferClick
+  end
+  object btn_acht: TButton
+    Left = 89
+    Top = 135
+    Width = 75
+    Height = 25
+    Caption = '8'
+    TabOrder = 6
+    OnClick = btnZifferClick
+  end
+  object btn_neun: TButton
+    Left = 170
+    Top = 135
+    Width = 75
+    Height = 25
+    Caption = '9'
+    TabOrder = 7
+    OnClick = btnZifferClick
+  end
+  object btn_Multiplizieren: TButton
+    Left = 251
+    Top = 135
+    Width = 75
+    Height = 25
+    Caption = '*'
+    TabOrder = 8
+    OnClick = btn_MultiplizierenClick
+  end
+  object btn_vier: TButton
+    Left = 8
+    Top = 166
+    Width = 75
+    Height = 25
+    Caption = '4'
+    TabOrder = 9
+    OnClick = btnZifferClick
+  end
+  object btn_fuenf: TButton
+    Left = 89
+    Top = 166
+    Width = 75
+    Height = 25
+    Caption = '5'
+    TabOrder = 10
+    OnClick = btnZifferClick
+  end
+  object btn_sechs: TButton
+    Left = 170
+    Top = 166
+    Width = 75
+    Height = 25
+    Caption = '6'
+    TabOrder = 11
+    OnClick = btnZifferClick
+  end
+  object btn_minus: TButton
+    Left = 251
+    Top = 166
+    Width = 75
+    Height = 25
+    Caption = '-'
+    TabOrder = 12
+    OnClick = btn_minusClick
+  end
+  object btn_eins: TButton
+    Left = 8
+    Top = 197
+    Width = 75
+    Height = 25
+    Caption = '1'
+    TabOrder = 13
+    OnClick = btnZifferClick
+  end
+  object btn_zwei: TButton
+    Left = 89
+    Top = 197
+    Width = 75
+    Height = 25
+    Caption = '2'
+    TabOrder = 14
+    OnClick = btnZifferClick
+  end
+  object btn_3: TButton
+    Left = 170
+    Top = 197
+    Width = 75
+    Height = 25
+    Caption = '3'
+    TabOrder = 15
+    OnClick = btnZifferClick
+  end
+  object btn_plus: TButton
+    Left = 251
+    Top = 197
+    Width = 75
+    Height = 25
+    Caption = '+'
+    TabOrder = 16
+    OnClick = btn_plusClick
+  end
+  object Button17: TButton
+    Left = 8
+    Top = 228
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 17
+    OnClick = btn_moduloClick
+  end
+  object btn_Null: TButton
+    Left = 89
+    Top = 228
+    Width = 75
+    Height = 25
+    Caption = '0'
+    TabOrder = 18
+    OnClick = btnZifferClick
+  end
+  object btn_komma: TButton
+    Left = 170
+    Top = 228
+    Width = 75
+    Height = 25
+    Caption = '.'
+    TabOrder = 19
+    OnClick = btn_kommaClick
+  end
+  object btn_gleich: TButton
+    Left = 251
+    Top = 228
+    Width = 75
+    Height = 25
+    Caption = '='
+    TabOrder = 20
+    OnClick = btn_gleichClick
+  end
+end

@@ -2,8 +2,7 @@ program Taschenrechner;
 
 uses
   Vcl.Forms,
-  Unit1 in 'Unit1.pas' {Form10},
-  CalculatorUnit in 'CalculatorUnit.pas';
+  Unit10 in 'Unit10.pas' {Form10};
 
 {$R *.res}
 

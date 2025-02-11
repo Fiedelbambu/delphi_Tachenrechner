@@ -1,0 +1,45 @@
+unit CalculatorUnit;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm10 = class(TForm)
+    Edit1: TEdit;
+    btn_Modulo: TButton;
+    btn_loeschen: TButton;
+    btn_zurueck: TButton;
+    btn_dividieren: TButton;
+    btn_sieben: TButton;
+    btn_acht: TButton;
+    btn_neun: TButton;
+    btn_Multiplizieren: TButton;
+    btn_vier: TButton;
+    btn_fuenf: TButton;
+    btn_sechs: TButton;
+    btn_minus: TButton;
+    btn_eins: TButton;
+    btn_zwei: TButton;
+    btn_3: TButton;
+    btn_plus: TButton;
+    Button17: TButton;
+    btn_Null: TButton;
+    btn_komma: TButton;
+    btn_gleich: TButton;
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  Form10: TForm10;
+
+implementation
+
+{$R *.dfm}
+
+end.

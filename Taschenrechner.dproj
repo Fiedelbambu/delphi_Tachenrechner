@@ -123,10 +123,11 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Unit10.pas">
+        <DCCReference Include="Unit1.pas">
             <Form>Form10</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="CalculatorUnit.pas"/>
         <None Include="gitignore.txt"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

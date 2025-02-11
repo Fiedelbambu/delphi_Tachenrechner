@@ -1,0 +1,209 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TOperation = (opPercent,opNone, opAdd, opSubtract, opMultiply, opDivide, opModulo);
+   // TOperation ist eine Bibliothek welche die Formel zum Berechnen enthält
+  TForm10 = class(TForm)
+    Edit1: TEdit;
+    btn_Modulo: TButton;
+    btn_loeschen: TButton;
+    btn_zurueck: TButton;
+    btn_dividieren: TButton;
+    btn_sieben: TButton;
+    btn_acht: TButton;
+    btn_neun: TButton;
+    btn_Multiplizieren: TButton;
+    btn_vier: TButton;
+    btn_fuenf: TButton;
+    btn_sechs: TButton;
+    btn_minus: TButton;
+    btn_eins: TButton;
+    btn_zwei: TButton;
+    btn_3: TButton;
+    btn_plus: TButton;
+    Button17: TButton; // Hat aktuell keine Funktion
+    btn_Null: TButton;
+    btn_komma: TButton;
+    btn_gleich: TButton;
+    procedure btnZifferClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btn_plusClick(Sender: TObject);
+    procedure btn_gleichClick(Sender: TObject);
+    procedure btn_minusClick(Sender: TObject);
+    procedure btn_MultiplizierenClick(Sender: TObject);
+    procedure btn_dividierenClick(Sender: TObject);
+    procedure btn_moduloClick(Sender: TObject);
+    procedure btn_zurueckClick(Sender: TObject);
+    procedure btn_loeschenClick(Sender: TObject);
+    procedure btn_kommaClick(Sender: TObject);
+    procedure btn_percentClick(Sender: TObject);
+  private
+    { Private-Deklarationen }
+  FOperand1: Double;
+  FOperation: TOperation;
+
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  Form10: TForm10;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm10.FormCreate(Sender: TObject);
+begin
+  FOperand1 := 0.0;
+  FOperation := opNone;
+  Edit1.Text := '0';
+end;
+
+procedure TForm10.btnZifferClick(Sender: TObject);
+var
+  Ziffer: string;
+begin
+  Ziffer := (Sender as TButton).Caption;
+
+ if Edit1.Text = '0' then
+    Edit1.Text := Ziffer
+  else
+    Edit1.Text := Edit1.Text + Ziffer;
+end;
+
+procedure TForm10.btn_plusClick(Sender: TObject);
+begin
+  FOperand1 := StrToFloat(Edit1.Text);
+
+  FOperation := opAdd;
+
+  Edit1.Text := '0';
+end;
+
+procedure TForm10.btn_gleichClick(Sender: TObject);
+var
+  Operand2, Ergebnis: Double;
+begin
+  // Zweiten Operand holen
+  Operand2 := StrToFloat(Edit1.Text);
+
+  // Je nach Operation rechnen
+  case FOperation of
+    opAdd: Ergebnis := FOperand1 + Operand2;
+    opSubtract: Ergebnis := FOperand1 - Operand2;
+    opMultiply: Ergebnis := FOperand1 * Operand2;
+    opDivide:
+      begin
+        if Operand2 = 0 then
+        begin
+          ShowMessage('Division durch Null!');
+          Exit;
+        end;
+        Ergebnis := FOperand1 / Operand2;
+      end;
+    opModulo:
+      begin
+        // Modulo in Delphi oft als Integer-Operation
+        if Operand2 = 0 then
+        begin
+          ShowMessage('Modulo durch Null nicht definiert!');
+          Exit;
+        end;
+        Ergebnis := Trunc(FOperand1) mod Trunc(Operand2);
+      end;
+  else
+
+    Ergebnis := Operand2;
+  end;
+
+  // Ergebnis anzeigen
+  Edit1.Text := FloatToStr(Ergebnis);
+
+  FOperand1 := Ergebnis;
+  FOperation := opNone;
+end;
+
+procedure TForm10.btn_minusClick(Sender: TObject);
+begin
+  FOperand1 := StrToFloat(Edit1.Text);
+  FOperation := opSubtract;
+  Edit1.Text := '0';
+end;
+
+procedure TForm10.btn_MultiplizierenClick(Sender: TObject);
+  begin
+  FOperand1  := StrToFloat(Edit1.Text);
+  FOperation := opMultiply;
+  end;
+
+procedure TForm10.btn_dividierenClick(Sender: TObject);
+  begin
+  FOperand1  := StrToFloat(Edit1.Text);
+  FOperation := opDivide;
+    //opDivide
+  end;
+
+procedure TForm10.btn_moduloClick(Sender: TObject);
+ begin
+  FOperand1  := StrToFloat(Edit1.Text);
+  FOperation := opModulo;
+  Edit1.Text := '0';
+ //opModulo
+end;
+
+procedure TForm10.btn_zurueckClick(Sender: TObject);
+begin
+     var
+  temp: string;
+  begin
+    temp := Edit1.Text;
+
+    if Length(temp) > 0 then
+      Delete(temp, Length(temp), 1); // letztes Zeichen entfernen
+
+    Edit1.Text := temp;
+  end;
+end;
+
+procedure TForm10.btn_loeschenClick(Sender: TObject);
+begin
+  Edit1.Text := '0';
+
+  FOperand1 := 0;
+  FOperation := opNone;
+end;
+
+procedure TForm10.btn_percentClick(Sender: TObject);
+begin
+  FOperand1 := StrToFloat(Edit1.Text);
+  FOperation := opPercent;
+  Edit1.Text := '0';
+end;
+
+procedure TForm10.btn_kommaClick(Sender: TObject);
+begin
+  // Für Bruchzahlen ein komma setzen
+    // Prüfen, ob bereits ein Komma vorhanden ist
+  if Pos(',', Edit1.Text) = 0 then
+  begin
+    // Wenn Edit1 leer ist oder nur '0', fügen wir '0,' ein
+    if (Edit1.Text = '') or (Edit1.Text = '0') then
+      Edit1.Text := '0,'
+    else
+      // Andernfalls hängen wir einfach ein Komma ans Ende an
+      Edit1.Text := Edit1.Text + ',';
+  end;
+end;
+
+
+
+
+end.
+

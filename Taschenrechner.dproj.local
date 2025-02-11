@@ -1,11 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2025.02.10 09:35:30.456,=C:\dev_Delphi\Unit10.pas</Transaction>
-    <Transaction>2025.02.10 09:41:43.876,C:\dev_Delphi\Taschenrechner.dproj=C:\dev_Delphi\Project9.dproj</Transaction>
-    <Transaction>2025.02.10 09:42:42.137,C:\delphi_Rechner\Unit10.pas=C:\dev_Delphi\Unit10.pas</Transaction>
-    <Transaction>2025.02.10 09:42:42.137,C:\delphi_Rechner\Unit10.dfm=C:\dev_Delphi\Unit10.dfm</Transaction>
-    <Transaction>2025.02.10 09:42:46.347,C:\delphi_Rechner\Taschenrechner.dproj=C:\dev_Delphi\Taschenrechner.dproj</Transaction>
-    <Transaction>2025.02.10 09:43:47.982,=C:\delphi_Rechner\gitignore.txt</Transaction>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.347,C:\delphi_Rechner\Taschenrechner.dproj=C:\dev_Delphi\Taschenrechner.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.955,C:\delphi_Rechner\Unit1.pas=C:\delphi_Rechner\CalculatorUit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.552,=C:\delphi_Rechner\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.393,C:\delphi_Rechner\CalculatorUit.pas=C:\delphi_Rechner\CalculatorUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.876,C:\dev_Delphi\Taschenrechner.dproj=C:\dev_Delphi\Project9.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.982,=C:\delphi_Rechner\gitignore.txt</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.713,C:\delphi_Rechner\Unit2.pas=C:\delphi_Rechner\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.713,C:\delphi_Rechner\Unit2.dfm=C:\delphi_Rechner\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.645,C:\delphi_Rechner\CalculatorUnit.pas=C:\delphi_Rechner\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.137,C:\delphi_Rechner\Unit10.dfm=C:\dev_Delphi\Unit10.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.755,C:\delphi_Rechner\Unit10.dfm=C:\delphi_Rechner\CalculatorUnit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.645,C:\delphi_Rechner\CalculatorUnit.dfm=C:\delphi_Rechner\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.137,C:\delphi_Rechner\Unit10.pas=C:\dev_Delphi\Unit10.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.755,C:\delphi_Rechner\Unit10.pas=C:\delphi_Rechner\CalculatorUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.456,=C:\dev_Delphi\Unit10.pas</Transaction>
   </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="CalculatorUnit.pas"/>
+    <File Path="gitignore.txt"/>
+    <File Path="Unit1.pas"/>
+    <File Path="Unit1.dfm"/>
+  </ProjectSortOrder>
 </BorlandProject>
